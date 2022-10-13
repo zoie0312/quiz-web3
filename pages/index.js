@@ -2,7 +2,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 import {
   ConnectButton,
   getDefaultWallets,
-  RainbowKitProvider
+  RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
@@ -16,13 +16,13 @@ const { chains, provider } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
-  chains
+  chains,
 });
 
 const wagmiClient = createClient({
   autoConnect: true,
   connectors,
-  provider
+  provider,
 });
 
 export default function IndexPage() {
@@ -36,11 +36,10 @@ export default function IndexPage() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <ConnectButton />
-          <div>ha...</div>
           <Main />
         </div>
       </RainbowKitProvider>
