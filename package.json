@@ -8,12 +8,16 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "0.4.2",
-    "ethers": "5.6.9",
-    "next": "12.2.3-canary.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "wagmi": "0.5.9"
+    "@chakra-ui/react": "^2.3.5",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@rainbow-me/rainbowkit": "^0.7.1",
+    "ethers": "^5.7.1",
+    "framer-motion": "^7.5.3",
+    "next": "latest",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "wagmi": "^0.6.8"
   },
   "license": "MIT",
   "keywords": [],
